@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common'
 
-import { MatchRepository, PlayerRepository } from '@app/modules/logs/repositories'
+import { MatchRepository, PlayerRepository } from '@app/modules/games/repositories'
 
 @Injectable()
 export class GetRankingByMatchUseCase {

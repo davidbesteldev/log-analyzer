@@ -6,7 +6,7 @@ import { BaseRepository } from '@app/common/database/repositories/base.repositor
 
 import { DatabaseService } from '@app/database/database.service'
 
-import { IPlayerRankingPerformance } from '@app/modules/logs/repositories/interfaces/player.interface'
+import { IPlayerRankingPerformance } from '@app/modules/games/repositories/interfaces/player.interface'
 
 @Injectable()
 export class PlayerRepository extends BaseRepository<Prisma.PlayerDelegate> {

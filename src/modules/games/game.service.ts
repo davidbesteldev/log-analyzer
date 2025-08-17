@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common'
 
-import { GetRankingByMatchUseCase } from '@app/modules/game/use-cases'
+import { GetRankingByMatchUseCase } from '@app/modules/games/use-cases'
 
 @Injectable()
 export class GameService {

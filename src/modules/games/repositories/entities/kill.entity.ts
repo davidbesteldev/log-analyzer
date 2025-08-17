@@ -4,7 +4,7 @@ import { Kill } from '@prisma/client'
 import {
   KillMethodEnum,
   KillTypeEnum,
-} from '@app/modules/logs/repositories/enums/kill.enum'
+} from '@app/modules/games/repositories/enums/kill.enum'
 
 export class Killntity implements Kill {
   @ApiProperty()

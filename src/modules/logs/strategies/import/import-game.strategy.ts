@@ -8,14 +8,14 @@ import { DateUtil } from '@app/common/utils/date.util'
 
 import { DatabaseService } from '@app/database/database.service'
 
-import { WORLD_KILLER } from '@app/modules/game/constants'
-import { ImportTypeEnum } from '@app/modules/logs/enums'
-import { ExtractFromLogHelper } from '@app/modules/logs/helpers'
-import { ExtractLogResult, IImportStrategy } from '@app/modules/logs/interfaces'
+import { WORLD_KILLER } from '@app/modules/games/constants'
 import {
   KillMethodEnum,
   KillTypeEnum,
-} from '@app/modules/logs/repositories/enums/kill.enum'
+} from '@app/modules/games/repositories/enums/kill.enum'
+import { ImportTypeEnum } from '@app/modules/logs/enums'
+import { ExtractFromLogHelper } from '@app/modules/logs/helpers'
+import { ExtractLogResult, IImportStrategy } from '@app/modules/logs/interfaces'
 
 interface IGroupLogByMatch {
   logId: string
