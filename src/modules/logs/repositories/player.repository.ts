@@ -15,10 +15,10 @@ export class PlayerRepository extends BaseRepository<Prisma.PlayerDelegate> {
   }
 
   async getRankingPerformance(
-    externalMatchId: string,
+    matchExternalId: string,
   ): Promise<IPlayerRankingPerformance[]> {
     const result = await this.prismaService.$queryRawTyped(
-      getRankingPerformance(externalMatchId),
+      getRankingPerformance(matchExternalId),
     )
     return result.map((r) => ({ ...r, deaths: Number(r.deaths), frags: Number(r.frags) }))
   }

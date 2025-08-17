@@ -9,11 +9,11 @@ export class GetRankingByMatchUseCase {
     private readonly playerRepository: PlayerRepository,
   ) {}
 
-  async execute(externalMatchId: string) {
+  async execute(matchExternalId: string) {
     await this.matchRepository.model.findFirstOrThrow({
-      where: { externalId: externalMatchId },
+      where: { externalId: matchExternalId },
     })
 
-    return this.playerRepository.getRankingPerformance(externalMatchId)
+    return this.playerRepository.getRankingPerformance(matchExternalId)
   }
 }

@@ -6,7 +6,7 @@ import { GetRankingByMatchUseCase } from '@app/modules/game/use-cases'
 export class GameService {
   constructor(private readonly getRankingByMatchUseCase: GetRankingByMatchUseCase) {}
 
-  getRankingByMatch(externalMatchId: string) {
-    return this.getRankingByMatchUseCase.execute(externalMatchId)
+  getRankingByMatch(matchExternalId: string) {
+    return this.getRankingByMatchUseCase.execute(matchExternalId)
   }
 }

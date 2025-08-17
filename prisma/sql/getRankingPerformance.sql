@@ -1,4 +1,4 @@
--- @param {String} $1:externalMatchId
+-- @param {String} $1:matchExternalId
 SELECT
   p.id as "playerId",
   p.name,
@@ -7,7 +7,7 @@ SELECT
 FROM
   players AS p
 LEFT JOIN
-  kills AS k ON k.match_external_id = :externalMatchId AND (k.killer_id = p.id OR k.victim_id = p.id)
+  kills AS k ON k.match_external_id = :matchExternalId AND (k.killer_id = p.id OR k.victim_id = p.id)
 WHERE
   p.name != '<WORLD>'
 GROUP BY

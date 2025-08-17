@@ -9,7 +9,7 @@ export class GameController {
 
   @Get('/matches/:id/ranking')
   @ApiOperation({ summary: 'Buscar ranking por partida' })
-  getRankingByMatch(@Param('id') externalMatchId: string) {
-    return this.gameService.getRankingByMatch(externalMatchId)
+  getRankingByMatch(@Param('id') matchExternalId: string) {
+    return this.gameService.getRankingByMatch(matchExternalId)
   }
 }
