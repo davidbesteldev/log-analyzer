@@ -1,66 +1,21 @@
-# 📊 Log Analyzer
+23/04/2019 15:34:22 - New match 11348965 has started
+23/04/2019 15:36:04 - Roman killed Nick using M16
+23/04/2019 15:36:33 - <WORLD> killed Nick by DROWN
+23/04/2019 15:39:22 - Match 11348965 has ended
 
-Um analisador de logs para processamento de dados e geração de estatísticas.
+23/04/2021 16:14:22 - New match 11348966 has started
+23/04/2021 16:26:04 - Roman killed Marcus using M16
+23/04/2021 16:36:33 - <WORLD> killed Marcus by DROWN
+23/04/2021 16:49:22 - Match 11348966 has ended
 
-## 🚀 Run project
+24/04/2020 16:14:22 - New match 11348961 has started
+24/04/2020 16:26:12 - Roman killed Marcus using M16
+24/04/2020 16:35:56 - Marcus killed Jhon using AK47
+24/04/2020 17:12:34 - Roman killed Bryian using M16
+24/04/2020 18:26:14 - Bryan killed Marcus using AK47
+24/04/2020 19:36:33 - <WORLD> killed Marcus by DROWN
+24/04/2020 20:19:22 - Match 11348961 has ended
 
-```bash
-# Instale as dependências
-npm install
-
-# Executa as migrations
-npm run prisma:migrate:dev
-
-# Gera os clientes do Prisma
-npm run prisma:generate
-
-# Inicia em modo watch
-npm run start:dev
-```
-
----
-
-## 📖 Facilitators
-
-- Acesse a documentação das rotas via **Swagger**: [http://localhost:3000/docs](http://localhost:3000/docs)
-- Visualize rapidamente os dados com:
-
-  ```bash
-  npm run prisma:studio
-  ```
-
-- Zera o banco de dados, recria as tabelas e roda o seed automaticamente ❗somente para desenvolvimento❗:
-  ```bash
-  npx prisma migrate reset
-  ```
-- Exemplo de log para importar com o tipo "game": [log](assets/game-log-example.log)
-
----
-
-## 🔧 Improvements
-
-- Transformar a rota de importação em **assíncrona com fila de processamento**, evitando bloqueio e garantindo controle de carga em importações simultâneas.
-- A aplicação já está configurada para usar **Jest** (incluindo workflow no GitHub). No momento está manual, mas a boa prática é configurá-lo para rodar automaticamente em **CI/CD**.
-- Melhorar os detalhes da documentação no **Swagger**, permitindo exportação direta para facilitar integrações.
-
----
-
-## 💡 Tips
-
-- Para quem usa **VSCode**, recomendo rodar um **Reload Window** após executar "prisma:generate"
-
----
-
-## 🎯 Challenge Issues
-
-- Ranking Global de Jogadores
-- Friendly Fire
-
----
-
-### 📝 Example Logs
-
-```
 25/04/2025 16:14:22 - New match 11348965 has started
 25/04/2025 16:20:00 - Roman killed Marcus using M16
 25/04/2025 16:20:05 - Roman killed Marcus using M16
@@ -104,4 +59,3 @@ npm run start:dev
 25/04/2025 16:26:00 - Jhon killed Marcus using AK47
 25/04/2025 16:27:00 - Jhon killed Marcus using AK47
 25/04/2025 16:49:22 - Match 11348968 has ended
-```

@@ -15,8 +15,17 @@ export class GetMatchStatisticsUseCase {
       where: { externalId: matchExternalId },
     })
 
-    return this.matchSummaryRepository.model.findFirstOrThrow({
+    const summary = await this.matchSummaryRepository.model.findFirstOrThrow({
       where: { matchId: match.id },
     })
+
+    return {
+      id: summary.matchId,
+      externalId: matchExternalId,
+      winnerStats: summary.winnerStats as GetMatchStatisticsResponseDTO['winnerStats'],
+      performanceMetrics:
+        summary.performanceMetrics as GetMatchStatisticsResponseDTO['performanceMetrics'],
+      ranking: summary.ranking as GetMatchStatisticsResponseDTO['ranking'],
+    }
   }
 }
