@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common'
 
-import { GetRankingByMatchUseCase } from '@app/modules/games/use-cases'
+import { GetMatchStatisticsUseCase } from '@app/modules/games/use-cases'
 
 @Injectable()
 export class GameService {
-  constructor(private readonly getRankingByMatchUseCase: GetRankingByMatchUseCase) {}
+  constructor(private readonly getMatchStatisticsUseCase: GetMatchStatisticsUseCase) {}
 
-  getRankingByMatch(matchExternalId: string) {
-    return this.getRankingByMatchUseCase.execute(matchExternalId)
+  getMatchStatistics(matchExternalId: string) {
+    return this.getMatchStatisticsUseCase.execute(matchExternalId)
   }
 }

@@ -1,4 +1,5 @@
 export interface ExtractLogResult {
+  timestamp: string
   line: string
   found: {
     pattern: string

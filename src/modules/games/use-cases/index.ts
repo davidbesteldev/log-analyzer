@@ -1,1 +1,1 @@
-export * from './get-ranking-match.use-case'
+export * from './get-match-statistics.use-case'

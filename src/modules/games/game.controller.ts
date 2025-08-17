@@ -7,9 +7,9 @@ import { GameService } from './game.service'
 export class GameController {
   constructor(private readonly gameService: GameService) {}
 
-  @Get('/matches/:id/ranking')
+  @Get('/matches/:id/statistics')
   @ApiOperation({ summary: 'Buscar ranking por partida' })
   getRankingByMatch(@Param('id') matchExternalId: string) {
-    return this.gameService.getRankingByMatch(matchExternalId)
+    return this.gameService.getMatchStatistics(matchExternalId)
   }
 }

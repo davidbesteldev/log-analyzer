@@ -1,0 +1,13 @@
+model MatchSummary {
+  matchId Int   @id @unique
+  match   Match @relation(fields: [matchId], references: [id])
+
+  ranking            Json  @map("ranking")
+  winnerStats        Json? @map("winner_stats")
+  performanceMetrics Json? @map("performance_metrics")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
+
+  @@map("match_summaries")
+}

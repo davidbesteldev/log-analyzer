@@ -6,7 +6,7 @@ import {
   KillTypeEnum,
 } from '@app/modules/games/repositories/enums/kill.enum'
 
-export class Killntity implements Kill {
+export class KillEntity implements Kill {
   @ApiProperty()
   id: number
 
