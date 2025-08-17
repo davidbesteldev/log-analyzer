@@ -43,7 +43,7 @@ npm run start:dev
 ## 🔧 Improvements
 
 - Transformar a rota de importação em **assíncrona com fila de processamento**, evitando bloqueio e garantindo controle de carga em importações simultâneas.
-- A aplicação já está configurada para usar **Jest** (incluindo workflow no GitHub). No momento está manual, mas a boa prática é configurá-lo para rodar automaticamente em **CI/CD**.
+- A aplicação já está configurada para usar **Jest** (incluindo workflow no GitHub). No momento está manual, mas a boa prática é configurá-lo para rodar automaticamente em **CI/CD**, por hora esta manual pois é preciso **melhorar a cobertura de testes da aplicação**.
 - Melhorar os detalhes da documentação no **Swagger**, permitindo exportação direta para facilitar integrações.
 - Incluir autenticação nas rotas.
 
