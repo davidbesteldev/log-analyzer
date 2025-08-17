@@ -1,0 +1,20 @@
+model Kill {
+  id        Int      @id @default(autoincrement())
+  timestamp DateTime
+  weapon    String?
+  method    String
+  killType  String   @map("kill_type")
+
+  matchExternalId String @map("match_external_id")
+  killerId        Int    @map("killer_id")
+  victimId        Int    @map("victim_id")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
+
+  match  Match  @relation(fields: [matchExternalId], references: [externalId])
+  killer Player @relation("killer_relation", fields: [killerId], references: [id])
+  victim Player @relation("victim_relation", fields: [victimId], references: [id])
+
+  @@map("kills")
+}

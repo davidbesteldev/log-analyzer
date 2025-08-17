@@ -1,0 +1,12 @@
+model Player {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+
+  killsAsKiller Kill[] @relation("killer_relation")
+  killsAsVictim Kill[] @relation("victim_relation")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
+
+  @@map("players")
+}
