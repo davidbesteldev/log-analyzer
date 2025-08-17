@@ -6,7 +6,15 @@ import { EnvService } from '@app/config'
 
 import { appMiddlewares } from '@app/common/middlewares/app.middleware'
 
+function handleBigIntSerialization() {
+  BigInt.prototype['toJSON'] = function (this: bigint) {
+    return this.toString()
+  }
+}
+
 async function bootstrap() {
+  handleBigIntSerialization()
+
   const app = await NestFactory.create(AppModule)
 
   const envService = app.get(EnvService)

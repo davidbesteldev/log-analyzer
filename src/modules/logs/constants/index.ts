@@ -1,1 +1,0 @@
-export const LOG_IMPORT_FACTORY = 'LOG_IMPORT_FACTORY'

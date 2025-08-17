@@ -1,3 +1,3 @@
 export enum ImportTypeEnum {
-  FPS = 'fps',
+  GAME = 'game',
 }

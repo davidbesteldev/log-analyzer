@@ -1,1 +1,1 @@
-export * from './import-fps.strategy'
+export * from './import-game.strategy'
