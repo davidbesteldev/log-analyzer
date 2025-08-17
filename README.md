@@ -5,6 +5,9 @@ Um analisador de logs para processamento de dados e geração de estatísticas.
 ## 🚀 Run project
 
 ```bash
+# Crie a .env conforme a .env.example do projeto
+cp .env.example .env
+
 # Instale as dependências
 npm install
 
@@ -42,6 +45,7 @@ npm run start:dev
 - Transformar a rota de importação em **assíncrona com fila de processamento**, evitando bloqueio e garantindo controle de carga em importações simultâneas.
 - A aplicação já está configurada para usar **Jest** (incluindo workflow no GitHub). No momento está manual, mas a boa prática é configurá-lo para rodar automaticamente em **CI/CD**.
 - Melhorar os detalhes da documentação no **Swagger**, permitindo exportação direta para facilitar integrações.
+- Incluir autenticação nas rotas.
 
 ---
 

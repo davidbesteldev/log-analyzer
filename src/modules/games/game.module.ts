@@ -11,7 +11,10 @@ import {
   MatchSummaryRepository,
   PlayerRepository,
 } from '@app/modules/games/repositories'
-import { GetMatchStatisticsUseCase } from '@app/modules/games/use-cases'
+import {
+  GetMatchesUseCase,
+  GetMatchStatisticsUseCase,
+} from '@app/modules/games/use-cases'
 
 const repositores = [
   MatchRepository,
@@ -27,6 +30,7 @@ const repositores = [
     ...repositores,
     ...Object.values(GameCreationHelpers),
     GameService,
+    GetMatchesUseCase,
     GetMatchStatisticsUseCase,
   ],
   exports: [...repositores, ...Object.values(GameCreationHelpers)],
