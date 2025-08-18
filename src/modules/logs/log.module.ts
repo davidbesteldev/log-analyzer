@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common'
 
+import { LOG_IMPORT_FACTORY } from '@app/common/constants'
+
 import { DatabaseModule } from '@app/database/database.module'
 
-import { LOG_IMPORT_FACTORY } from '@app/modules/games/constants'
 import { GameModule } from '@app/modules/games/game.module'
 import { ImportFactory } from '@app/modules/logs/factories/import.factory'
 import * as helpers from '@app/modules/logs/helpers'
