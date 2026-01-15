@@ -1,3 +1,5 @@
+> ⚠️ **Nota:** Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica em um processo seletivo.
+
 # 📊 Log Analyzer
 
 Um analisador de logs para processamento de dados e geração de estatísticas.
